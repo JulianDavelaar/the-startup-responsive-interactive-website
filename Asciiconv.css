@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'austera';
+    src: url('Fonts/AusteraText-Regular.woff2') format('woff2');
+}
+
+*{
+    font-family: 'austera', Arial, Helvetica, sans-serif;
+    color: #43444f;
+    max-width: 100%;  /* vragen hoe ik dit niet op header kan toepassen */
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ddd ;  /* shorthand hex lichtgrijs */
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0 40px;
+}
+
+button{
+    background-color: #F2735E ;
+    color: #FEFEFF ;
+    text-decoration: bold;
+    border: none;
+    border-radius: 2px;
+
+}
+
+textarea{
+    max-width: 800px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-col h4{
+    margin-bottom: 1rem;
+}
