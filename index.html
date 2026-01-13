@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Asciiconv.css">
     <title>Soundslice ASCII Converter</title>
 </head>
+<body>
 
     <header>
         <img src="assets/SoundsliceLogo.svg" alt="Company logo" width="35" height="35">
@@ -13,25 +14,25 @@
     </header>
 
         
-        <body>
-            <div class="body">
-
+        <main>
+            <!-- <div class="body"> -->
+            <section class="convert">
                 <h1>Convert ASCII into readable sheet music</h1>
 
-               <label for="ASCII Input">Your ASCII input</label>
-               <textarea name="ASCII input" placeholder=" 
-                |\
-                ---|\--------|-\\-----
-                ---|/-------0---\|----
-                --/|-------------|----
+                <label for="ASCII Input">Your ASCII input</label>
+                <textarea class="ASCII" name="ASCII input" 
+                placeholder="|\---|\--------|-\\--------|
+                /-------0---\|------/
+                |-------------|----
                 -|-/-\----------0-----
                 --\|/-----------------">
                 </textarea>
 
-            <button>Convert</button>
+                <button>Convert</button>
 
-            <label for="Sheet Output">Your readable sheet music</label>
-            <textarea name="Sheet Output" placeholder="♯ ♫ ♬ ø"></textarea>
+                <label for="Sheet Output">Your readable sheet music</label>
+                <textarea name="Sheet Output" placeholder="♯ ♫ ♬ ø"></textarea>
+            </section>
 
             <h2>this is just the beginning! discover how soundslice can change your way of learning</h2>
 
@@ -98,5 +99,5 @@
                 <li>New: Drag to make videos fullscreen • nov 27</li>
             </ul>
 </footer>
-
+</body>
 </html>

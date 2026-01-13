@@ -1,3 +1,14 @@
+:root {
+    --background-color: #FEFEFF;
+    --primary-color: #F2725F;
+    --secondary-color: #F2A42D;
+    --button-color: #F2735E;
+    --text-color: #43444f;
+    --border-radius: 2px;
+}
+
+
+
 @font-face {
     font-family: 'austera';
     src: url('Fonts/AusteraText-Regular.woff2') format('woff2');
