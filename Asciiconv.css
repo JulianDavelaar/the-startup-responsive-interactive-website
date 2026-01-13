@@ -16,41 +16,95 @@
 
 *{
     font-family: 'austera', Arial, Helvetica, sans-serif;
-    color: #43444f;
+    color: var(--text-color);
     max-width: 100%;  /* vragen hoe ik dit niet op header kan toepassen */
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: ;
+     grid-template-areas: 
+    "header"
+    "convert"
+    "about"
+    "video"
+    "signup"
+    "reviews"
+    "footer";
 }
 
 header{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 15px;
     padding-left: 10px;
     border-bottom: 1px solid #ddd ;  /* shorthand hex lichtgrijs */
+    grid-area: header;
 }
 
-.body{
-    display: grid;
-    grid-template-columns: 1fr;
+main{
+    margin: 0;
+    padding: 0 40px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
     place-items: center;
 }
 
-body{
-    margin: 0;
-    padding: 0 40px;
+.convert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area:convert;
+
+    
+    button{
+        background-color: #F2735E ;
+        color: #FEFEFF ;
+        text-decoration: bold;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: .75em;
+        width: fit-content;
+        margin: 1em;
+    }
+
+    textarea{
+        width: 80%;
+        border: var(--text-color) solid 2px;
+        border-radius: var(--border-radius) ;
+    }
+
+    .ASCII{
+        height: 5em;
+    }
 }
 
-button{
-    background-color: #F2735E ;
-    color: #FEFEFF ;
-    text-decoration: bold;
-    border: none;
-    border-radius: 2px;
-
+.about{
+    grid-area: about;
 }
 
-textarea{
-    max-width: 800px;
+video{
+    grid-area: video;
+}
+
+.signup{
+    grid-area: signup;
+}
+
+.reviews{
+    grid-area: reviews;
+
+    .galerij{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    img{
+        max-width: 40vw;
+    }
 }
 
 footer{
@@ -63,7 +117,15 @@ footer{
 }
 
 @media (min-width: 800px) {
-    .body{
-        grid-template-columns: 1fr 1fr;
-    }
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+        grid-template-areas:
+    "header header"
+    "convert video"
+    "convert signup"
+    "about about"
+    "reviews reviews"
+"footer footer";}           
 }
