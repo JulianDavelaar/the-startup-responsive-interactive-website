@@ -23,8 +23,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: ;
-     grid-template-areas: 
+    grid-template-areas: 
     "header"
     "convert"
     "about"
@@ -84,6 +83,12 @@ main{
 
 .about{
     grid-area: about;
+
+    .checkmark{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        align-items: center;
+    }
 }
 
 video{
@@ -92,6 +97,17 @@ video{
 
 .signup{
     grid-area: signup;
+
+    button{
+        background-color: #F2735E ;
+        color: #FEFEFF ;
+        text-decoration: bold;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: .75em;
+        width: fit-content;
+        margin: 1em;
+    }
 }
 
 .reviews{
@@ -110,11 +126,19 @@ video{
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .footer-column{
+        grid-column-start: auto;
+        align-items: center;
+    }
+    
 }
 
-.footer-col h4{
-    margin-bottom: 1rem;
+ul{
+    list-style: none;
+    
 }
+
 
 @media (min-width: 800px) {
 main{

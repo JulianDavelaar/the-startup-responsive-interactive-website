@@ -19,32 +19,33 @@
             <section class="convert">
                 <h1>Convert ASCII into readable sheet music</h1>
 
-                <label for="ASCII Input">Your ASCII input</label>
+                <label for="ASCIIInput">Your ASCII input</label>
                 <textarea class="ASCII" name="ASCII input" 
-                placeholder="|\---|\--------|-\\--------|
-                /-------0---\|------/
-                |-------------|----
-                -|-/-\----------0-----
-                --\|/-----------------">
-                </textarea>
+                placeholder="e|---0---2---3---2---0---0---2---3---2---0---0---2---3---2---0---|
+B|---1---1---1---1---1---1---1---1---1---1---1---1---1---1---1---|
+G|---0---0---0---0---0---0---0---0---0---0---0---0---0---0---0---|
+D|---2---2---2---2---2---2---2---2---2---2---2---2---2---2---2---|
+A|---3---3---3---3---3---3---3---3---3---3---3---3---3---3---3---|
+E|------------------------------------------------------------------|"></textarea>
 
                 <button>Convert</button>
 
-                <label for="Sheet Output">Your readable sheet music</label>
+                <label for="SheetOutput">Your readable sheet music</label>
                 <textarea name="Sheet Output" placeholder="♯ ♫ ♬ ø"></textarea>
             </section>
 
             <section class="about">
                 <h2>this is just the beginning! discover how soundslice can change your way of learning</h2>
-
-                <img src="assets/check_small.svg" alt=""> <p><strong>Notation synced with real recordings.</strong> 
-                    Tone, feel, technique — there's so much that notation can't communicate. Soundslice combines the best of both worlds.</p>
-                <img src="assets/check_small.svg" alt=""> <p><strong>Intuitive practice tools.</strong> 
-                    Click a note to go to that moment of the video. Drag across notes to make a loop. Slow down, transpose, solo parts and much more.</p>
-                <img src="assets/check_small.svg" alt=""> <p><strong>Any device.</strong> 
-                    Phones, tablets, desktops… Soundslice works on any device with a web browser. No need to install anything.</p>
-                <img src="assets/check_small.svg" alt=""> <p><strong>Any instrument, style or genre.</strong> 
-                    Our player works beautifully with any type of music.</p>
+                    <nav class="checkmark">
+                        <img src="assets/check_small.svg" alt=""> <p><strong>Notation synced with real recordings.</strong> 
+                            Tone, feel, technique — there's so much that notation can't communicate. Soundslice combines the best of both worlds.</p>
+                        <img src="assets/check_small.svg" alt=""> <p><strong>Intuitive practice tools.</strong> 
+                            Click a note to go to that moment of the video. Drag across notes to make a loop. Slow down, transpose, solo parts and much more.</p>
+                        <img src="assets/check_small.svg" alt=""> <p><strong>Any device.</strong> 
+                            Phones, tablets, desktops… Soundslice works on any device with a web browser. No need to install anything.</p>
+                        <img src="assets/check_small.svg" alt=""> <p><strong>Any instrument, style or genre.</strong> 
+                            Our player works beautifully with any type of music.</p>
+                    </nav>
             </section>
 
             <video autoplay muted loop controls width="450" >
@@ -75,6 +76,7 @@
 
         
 <footer>
+    <div class="footer-column">
         <h4><strong>PRODUCTS</strong></h4>           
             <ul>
                 <li>Plans</li>
@@ -84,13 +86,16 @@
                 <li>Scan sheet music</li>
                 <li>Embed sheet music</li>      
             </ul>
-
+    </div>
+    <div class="footer-column">
         <h4><strong>HELP</strong></h4>  
             <ul>       
                 <li>Help center</li>
                 <li>Contact us</li>
             </ul>
+    </div>
         
+    <div class="footer-column">  
         <h4><strong>COMPANY</strong></h4>
             <ul>
                 <li>Over</li>
@@ -98,13 +103,17 @@
                 <li>Terms</li>
                 <li>Privacy</li>
             </ul>
+    </div>
 
+    <div class="footer-column">
         <h4><strong>RECENT UPDATES</strong></h4>
             <ul>
                 <li>Soundslice year in review, 2025 • dec 16</li>
                 <li>Chord diagram detection in music scans • dec 16</li>
                 <li>New: Drag to make videos fullscreen • nov 27</li>
             </ul>
+    </div>
+
 </footer>
 </body>
 </html>
