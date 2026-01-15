@@ -23,14 +23,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     grid-template-areas: 
-=======
-=======
->>>>>>> Stashed changes
-     grid-template-areas: 
->>>>>>> Stashed changes
     "header"
     "convert"
     "about"
