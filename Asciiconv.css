@@ -141,6 +141,7 @@ video{
     .galerij{
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     }
 
     img{
@@ -153,8 +154,9 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     .footer-column{
+        display: grid;
         grid-column-start: auto;
-        align-items: center;
+        align-content: left;
     }
     
 }
@@ -176,10 +178,14 @@ main{
     "convert signup"
     "about about"
     "reviews reviews"
-"footer footer";
+    "footer footer";
  }           
  
- .galerij{
+}
+/* nog een media querie maar dan max width omdat de layout anders verkeert om is */
+@media (max-width: 800px){
+    
+     .galerij{
     flex-direction: column;
  }
 }
