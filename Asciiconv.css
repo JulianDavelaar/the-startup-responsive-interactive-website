@@ -7,20 +7,19 @@
     --border-radius: 2px;
 }
 
-
-
 @font-face {
     font-family: 'austera';
     src: url('Fonts/AusteraText-Regular.woff2') format('woff2');
 }
 
-*{
+
+* {
     font-family: 'austera', Arial, Helvetica, sans-serif;
     color: var(--text-color);
     max-width: 100%;  /* vragen hoe ik dit niet op header kan toepassen */
 }
 
-body{
+body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -33,21 +32,16 @@ body{
     "footer";
 }
 
-header{
+header {
     display: flex; /*vragen voor header goed maken*/
     align-items: center;
     gap: 15px;
     padding-left: 10px;
     border-bottom: 1px solid #ddd ;  /* shorthand hex lichtgrijs */
     grid-area: header;
-    
 }
 
-li{
-    display: flex;
-}
-
-main{
+main {
     margin: 0;
     background-color: var(--background-color);
     display: flex;
@@ -55,14 +49,14 @@ main{
     place-items: center;
 }
 
-.convert{
+
+.convert {
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-area: convert;
 
-    
-    button{
+    button {
         background-color: #F2735E ;
         color: #FEFEFF ;
         text-decoration: bold;
@@ -73,49 +67,47 @@ main{
         margin: 1em;
         transition: 0.2s ease-out;
         }
+
+    button:hover {
+        scale: 1.2;
+        cursor: pointer;
+        background-color: #DC735E;
     }
+}
 
-     button:hover{
-           scale: 1.2;
-           cursor: pointer;
-            background-color: #DC735E;
+form {
+    align-content: center;
+}
 
-        }
+textarea {
+    width: 450px;
+    border: var(--text-color) solid 2px;
+    border-radius: var(--border-radius) ;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+.ASCII {
+    height: 5em;
+}
 
-
-
-    textarea{
-        width: 450px;
-        border: var(--text-color) solid 2px;
-        border-radius: var(--border-radius) ;
-        display: grid;
-        grid-template-columns: 1fr;
-        align-content: center;
-    }
-
-    .ASCII{
-        height: 5em;
-    }
-
-
-.about{
+.about {
     grid-area: about;
     padding-bottom: 5em;
 
-    .checkmark{
+    .checkmark {
         display: grid;
         grid-template-columns: 40px 1fr;
         align-items: center;
     }
 }
 
-video{
+video {
     grid-area: video;
-
 }
 
-.signup{
+
+.signup {
     grid-area: signup;
 
     button{
@@ -152,7 +144,7 @@ video{
     }
 }
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -162,13 +154,10 @@ footer{
         align-content: left;
     }
     
+    ul {
+    list-style: none;   
+    }
 }
-
-ul{
-    list-style: none;
-    
-}
-
 
 @media (min-width: 800px) {
 main{
@@ -185,7 +174,7 @@ main{
  }           
  
 }
-/* nog een media querie maar dan max width omdat de layout anders verkeert om is */
+/* nog een media querie maar dan max width omdat de layout anders verkeerd om is */
 @media (max-width: 800px){
     
      .galerij{
