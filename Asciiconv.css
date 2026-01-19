@@ -86,9 +86,12 @@ main{
 
 
     textarea{
-        width: 80%;
+        width: 450px;
         border: var(--text-color) solid 2px;
         border-radius: var(--border-radius) ;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
     }
 
     .ASCII{
