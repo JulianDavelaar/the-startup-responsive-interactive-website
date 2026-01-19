@@ -1,3 +1,13 @@
+**Soundslice**
+Deze website dient als visueel prototype voor een nieuwe pagina voor de soundslice website. de knoppen en converter zijn niet werkzaam omdat dit van onze opdrachtgever niet nodig is. 
+Op de site is te zien hoe functionaliteit en marketing samen gaan om zo AI traffic door te sturen naar de soundslice site om zo het klantenbestand uit te breiden.
+
+**ademruimte en inspringen**
+Per stuk in me code heb ik gebruik gemaakt van tab's en spaties om het zo overzichtelijk te maken.
+hier is te zien dat ik bij de sections overzichtelijk tab's heb gebruikt.
+https://github.com/JulianDavelaar/the-startup-responsive-interactive-website/blob/85e65ddb4b7e77679657f911b0e393d0d235d9f8/index.html#L43-L55
+
+
 Ontwerp en maak een responsive website voor een startup.
 
 De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
