@@ -1,3 +1,7 @@
+
+
+
+/* oude CSS */
 :root {
     --background-color: #FEFEFF;
     --primary-color: #F2725F;
@@ -12,31 +16,32 @@
     src: url('Fonts/AusteraText-Regular.woff2') format('woff2');
 }
 
+
 * {
     font-family: 'austera', Arial, Helvetica, sans-serif;
     color: var(--text-color);
-    max-width: 100%;
+    max-width: 100%; 
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-        "header"
-        "convert"
-        "about"
-        "video"
-        "signup"
-        "reviews"
-        "footer";
+    "header"
+    "convert"
+    "about"
+    "video"
+    "signup"
+    "reviews"
+    "footer";
 }
 
 header {
-    display: flex;
+    display: flex; /*vragen voor header goed maken*/
     align-items: center;
     gap: 15px;
     padding-left: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd ;  /* shorthand hex lichtgrijs */
     grid-area: header;
 }
 
@@ -46,42 +51,28 @@ main {
     display: flex;
     flex-direction: column;
     place-items: center;
-
-    /* Desktop layout */
-    @media (min-width: 800px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "header header"
-            "convert video"
-            "convert signup"
-            "about about"
-            "reviews reviews"
-            "footer footer";
-    }
 }
+
 
 .convert {
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-area: convert;
-}
 
-/* Herbruikbare button styles */
-button {
-    background-color: var(--button-color);
-    color: #FEFEFF;
-    font-weight: bold;
-    border: none;
-    border-radius: var(--border-radius);
-    padding: .75em;
-    width: fit-content;
-    margin: 1em;
-    transition: 0.2s ease-out;
+    button {
+        background-color: #F2735E ;
+        color: #FEFEFF ;
+        text-decoration: bold;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: .75em;
+        width: fit-content;
+        margin: 1em;
+        transition: 0.2s ease-out;
+        }
 
-    &:hover {
+    button:hover {
         scale: 1.2;
         cursor: pointer;
         background-color: #DC735E;
@@ -95,7 +86,7 @@ form {
 textarea {
     width: 450px;
     border: var(--text-color) solid 2px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) ;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -119,26 +110,40 @@ video {
     grid-area: video;
 }
 
+
 .signup {
     grid-area: signup;
-}
 
-.reviews {
-    grid-area: reviews;
-
-    .galerij {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-
-        /* Desktop: horizontale layout */
-        @media (min-width: 800px) {
-            flex-direction: row;
-        }
+    button{
+        background-color: #F2735E ;
+        color: #FEFEFF ;
+        text-decoration: bold;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: .75em;
+        width: fit-content;
+        margin: 1em;
+        transition: 0.2s ease-out;
     }
 
-    img {
+    button:hover{
+        scale: 1.2;
+        cursor: pointer;
+        background-color: #DC735E;
+    }
+}
+
+
+.reviews{
+    grid-area: reviews;
+
+    .galerij{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    }
+
+    img{
         max-width: 40vw;
     }
 }
@@ -147,13 +152,36 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    .footer-column {
+    .footer-column{
         display: grid;
         grid-column-start: auto;
         align-content: left;
     }
     
     ul {
-        list-style: none;   
+    list-style: none;   
     }
+}
+
+@media (min-width: 800px) {
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+        grid-template-areas:
+    "header header"
+    "convert video"
+    "convert signup"
+    "about about"
+    "reviews reviews"
+    "footer footer";
+ }           
+ 
+}
+/* nog een media querie maar dan max width omdat de layout anders verkeerd om is */
+@media (max-width: 800px){
+    
+     .galerij{
+    flex-direction: column;
+ }
 }

@@ -21,7 +21,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "convert"
         "about"
@@ -126,16 +126,26 @@ video {
 .reviews {
     grid-area: reviews;
 
+    
+
     .galerij {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
+        justify-content: center;
+        gap: 20px;
+
 
         /* Desktop: horizontale layout */
         @media (min-width: 800px) {
             flex-direction: row;
         }
+
+    }
+
+    h3{
+        text-align: center;
     }
 
     img {
@@ -150,10 +160,11 @@ footer {
     .footer-column {
         display: grid;
         grid-column-start: auto;
-        align-content: left;
+        place-items: left;
+        align-items: left;
     }
-    
+
     ul {
-        list-style: none;   
+        list-style: none;
     }
 }
