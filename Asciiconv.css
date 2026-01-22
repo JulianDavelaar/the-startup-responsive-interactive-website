@@ -5,6 +5,7 @@
     --button-color: #F2735E;
     --text-color: #43444f;
     --border-radius: 2px;
+    --rvw-background: #faf8f5;
 }
 
 @font-face {
@@ -123,23 +124,74 @@ video {
     grid-area: signup;
 }
 
-.reviews {
-    grid-area: reviews;
+article{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--rvw-background);
+    max-width: 80%;
+    margin: 1em;
+    border-radius: 15px;
+    align-items: center;
+    justify-items: center;
 
+        h2{
+        font-size: 1em;
+         margin: 10px;
+        color: #f3735e;
+        }
+
+        a{
+            font-size: 1em;
+            text-decoration: none;
+            &:hover{
+                color: #f3735e;
+            }
+        }
+        
+        p, img{
+          font-size: .75em;
+          margin: 10px;
+          text-align: left;
+        }
+
+
+      .reviewtxt, .reviewtxt1 .reviewtxt2, .reviewtxt3, .reviewtxt4{
+    grid-row-start: 1;
+    text-align: left;
+
+   }
+
+    .reviewimg, .reviewimg1, .reviewimg2, .reviewimg3, .reviewimg4{
+        grid-row-start: 2;
+        max-width: 80%;
+        background-color: var(--background-color);
+        box-shadow: 1px 1px 1px 1px;
+        border-radius: 10px;
+        transform: rotate(-1deg);
+        padding: 14px;    
+        display: grid;
+        grid-template-rows: 1fr 40px;
+        
+        
+    }
+    .avatar{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
     
 
-    .galerij {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        gap: 20px;
+}
 
+.reviews {
+    grid-area: reviews;
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
 
         /* Desktop: horizontale layout */
         @media (min-width: 800px) {
-            flex-direction: row;
+            grid-template-columns: 1fr 1fr;
         }
 
     }
