@@ -2,6 +2,9 @@
 Deze website dient als visueel prototype voor een nieuwe pagina voor de soundslice website. de knoppen en converter zijn niet werkzaam omdat dit van onze opdrachtgever niet nodig is. 
 Op de site is te zien hoe functionaliteit en marketing samen gaan om zo AI traffic door te sturen naar de soundslice site om zo het klantenbestand uit te breiden.
 
+**Hoe werkt het?**
+dit is de pagina waarop AI traffic opgevangen wordt wanneer ze doorgeleid worden naar Soundslice, de pagina bestaat uit een werkzaam gedeelte met 2 textarea's. daarnaast zijn info en reviews te zien van bestaande gebruikers van soundslice.
+
 **ademruimte en inspringen**
 Per stuk in me code heb ik gebruik gemaakt van tab's en spaties om het zo overzichtelijk te maken.
 hier is te zien dat ik bij de sections overzichtelijk tab's heb gebruikt.
