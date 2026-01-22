@@ -149,22 +149,35 @@ video {
     }
 
     img {
-        max-width: 40vw;
+        max-width: 50vw;
     }
 }
 
-footer {
+ footer {     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-content: baseline;
+    justify-content: left;
+    padding: 0 60px 0 60px;
 
-    .footer-column {
+    
+    @media (min-width: 550px){
         display: grid;
-        grid-column-start: auto;
-        place-items: left;
-        align-items: left;
+        grid-template-columns: 1fr 1fr;
     }
 
-    ul {
+    @media(min-width: 1000px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+   
+    h4{
+        text-align:left;
+        padding-left: 40px;
+    }
+
+    li {
         list-style: none;
+        text-align: left;
     }
 }
