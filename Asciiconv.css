@@ -1,11 +1,12 @@
 :root {
     --background-color: #FEFEFF;
-    --primary-color: #F2725F;
+    --primary-color: #E41407;
     --secondary-color: #F2A42D;
-    --button-color: #F2735E;
+    --button-color: #E41405;
     --text-color: #43444f;
     --border-radius: 2px;
     --rvw-background: #faf8f5;
+    --white-color: white;
 }
 
 @font-face {
@@ -73,7 +74,7 @@ main {
 /* Herbruikbare button styles */
 button {
     background-color: var(--button-color);
-    color: #FEFEFF;
+    color: var(--white-color);
     font-weight: bold;
     border: none;
     border-radius: var(--border-radius);
@@ -85,7 +86,7 @@ button {
     &:hover {
         scale: 1.2;
         cursor: pointer;
-        background-color: #DC735E;
+        background-color: #E41300;
     }
 }
 
@@ -99,6 +100,7 @@ textarea {
     border-radius: var(--border-radius);
     display: grid;
     grid-template-columns: 1fr;
+    width: 350px;
 }
 
 .ASCII {
@@ -189,16 +191,19 @@ article{
     display: grid;
     grid-template-columns: 1fr;
 
+    h3{
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
         /* Desktop: horizontale layout */
         @media (min-width: 800px) {
             grid-template-columns: 1fr 1fr;
         }
 
-    }
+       
 
-    h3{
-        text-align: center;
-    }
+    
 
     img {
         max-width: 50vw;
