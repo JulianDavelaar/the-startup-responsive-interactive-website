@@ -139,14 +139,15 @@ article{
         h2{
         font-size: 1em;
          margin: 10px;
-        color: #f3735e;
+        color: var(--primary-color);
         }
 
         a{
             font-size: 1em;
             text-decoration: none;
             &:hover{
-                color: #f3735e;
+                color: var(--primary-color);
+                
             }
         }
         
