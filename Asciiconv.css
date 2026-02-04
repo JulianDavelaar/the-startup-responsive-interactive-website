@@ -71,6 +71,15 @@ main {
     grid-area: convert;
 }
 
+.notation {
+    display: none;
+}
+
+.notation-visible {
+    display: block;
+}
+
+
 /* Herbruikbare button styles */
 button {
     background-color: var(--button-color);
