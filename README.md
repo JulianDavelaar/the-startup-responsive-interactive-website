@@ -30,6 +30,7 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 **Soundslice ASCII Notation converter** 
+
 Met deze pagina kunnen muzikanten ASCII music notation(dit is een vorm van muzieknotatie gegenereerd door AI) omzetten naar normale muziek notatie
 
 ## Beschrijving
@@ -44,6 +45,7 @@ https://juliandavelaar.github.io/the-startup-responsive-interactive-website/
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 Bij dit project is gebruik gemaakt van HTML, CSS & JS. 
+
 **HTML**
 * De HTML heeft een semantische structuur met: header main section article en footer.
 * Formulier elementen zoals <textarea> voor ASCII input en <output> voor geconverteerde bladmuziek
