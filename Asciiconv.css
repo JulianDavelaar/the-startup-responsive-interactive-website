@@ -79,12 +79,38 @@ main {
 /* JS interactie */
 
 .notation {
-    display: none;
+    display: block;
+    scale: 0;
+    opacity: 0;
+    transition: scale 0.5s ease, opacity 0.5s ease;
 }
 
+/* Voor animatie display weggehaald en met simpele transition op scale en opacity de fade-out animatie gemaakt */
+
 .notation-visible {
-    display: block;
+    animation: appear;
+    scale: 1;
+    opacity: 1;
+    animation-duration: 0.5s;
 }
+
+
+ @keyframes appear {
+        0%{
+            scale: 0;
+            opacity: 0;
+        }
+
+        75%{
+            scale: 1.1;
+            opacity: 1;
+        }
+
+        100%{
+            scale: 1;
+            opacity: 1;
+        }
+        }
 
 
 /* Herbruikbare button styles */
