@@ -50,7 +50,7 @@ main {
     place-items: center;
 
     /* Desktop layout */
-    @media (min-width: 800px) {
+    @media (min-width: 850px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -69,7 +69,14 @@ main {
     flex-direction: column;
     align-items: center;
     grid-area: convert;
+
+    /* Media query zodat hij alleen verspringt bij mobile en desktop op zn plek blijft */
+      @media (min-width: 800px) {
+            min-height: 500px;
+        }
 }
+
+/* JS interactie */
 
 .notation {
     display: none;
@@ -116,6 +123,7 @@ textarea {
         outline: 1px solid #43444f;
         box-shadow: 0 0 0 1px;
     }   
+
 
 .ASCII {
     height: 5em;
